@@ -1,0 +1,42 @@
+﻿<Window x:Class="Lab6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab6"
+        mc:Ignorable="d"
+        Title="Lab6-Calculator" Height="450" Width="800" Background="Black">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="5" Grid.Column="0" x:Name="button0" Content="0" Click="number" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="5" Grid.Column="1" x:Name="button1" Content="1" Click="number" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="5" Grid.Column="2" x:Name="button2" Content="2" Click="number" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="5" Grid.Column="3" x:Name="buttonplus" Content="+" Click="Buttonplus" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="4" Grid.Column="0" x:Name="button3" Content="3" Click="number" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="4" Grid.Column="1" x:Name="button4" Content="4" Click="number" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="4" Grid.Column="2" x:Name="button5" Content="5" Click="number" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="4" Grid.Column="3" x:Name="buttonminus" Content="-" Click="Buttonminus" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="3" Grid.Column="0" x:Name="button6" Content="6" Click="number" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="3" Grid.Column="1" x:Name="button7" Content="7" Click="number" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="3" Grid.Column="2" x:Name="button8" Content="8" Click="number" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="3" Grid.Column="3" x:Name="buttonmul" Content="*" Click="Buttonmul" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="2" Grid.Column="0" x:Name="button9" Content="9" Click="number" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="2" Grid.Column="1" x:Name="buttonclear" Content="C" Click="number" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="2" Grid.Column="2" x:Name="buttonequal" Content="=" Click="Buttonequal" Background="Gray" FontSize="40"/>
+        <Button Grid.Row="2" Grid.Column="3" x:Name="buttondiv" Content="/" Click="Buttondiv" Background="Gray" FontSize="40"/>
+        <TextBox Grid.ColumnSpan="4" x:Name="result" Grid.RowSpan="2" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Right" FontSize="40"/>
+    </Grid>
+</Window>
